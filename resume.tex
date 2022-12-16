@@ -1,0 +1,207 @@
+%-------------------------
+ % Resume in Latex
+ % Author : Chirag Khandhar
+ % License : MIT
+ %------------------------
+
+ \documentclass[letterpaper,11pt]{article}
+
+ \usepackage{latexsym}
+ \usepackage[empty]{fullpage}
+ \usepackage{titlesec}
+ \usepackage{marvosym}
+ \usepackage[usenames,dvipsnames]{color}
+ \usepackage{verbatim}
+ \usepackage{enumitem}
+ \usepackage[hidelinks]{hyperref}
+ \usepackage{fancyhdr}
+ \usepackage[english]{babel}
+ \usepackage{tabularx}
+ \input{glyphtounicode}
+
+
+ %----------FONT OPTIONS----------
+ % sans-serif
+ % \usepackage[sfdefault]{FiraSans}
+ % \usepackage[sfdefault]{roboto}
+ % \usepackage[sfdefault]{noto-sans}
+ % \usepackage[default]{sourcesanspro}
+
+ % serif
+ % \usepackage{CormorantGaramond}
+ % \usepackage{charter}
+
+
+ \pagestyle{fancy}
+ \fancyhf{} % clear all header and footer fields
+ \fancyfoot{}
+ \renewcommand{\headrulewidth}{0pt}
+ \renewcommand{\footrulewidth}{0pt}
+
+ % Adjust margins
+ \addtolength{\oddsidemargin}{-0.5in}
+ \addtolength{\evensidemargin}{-0.5in}
+ \addtolength{\textwidth}{1in}
+ \addtolength{\topmargin}{-.5in}
+ \addtolength{\textheight}{1.0in}
+
+ \urlstyle{same}
+
+ \raggedbottom
+ \raggedright
+ \setlength{\tabcolsep}{0in}
+
+ % Sections formatting
+ \titleformat{\section}{
+   \vspace{-4pt}\scshape\raggedright\large
+ }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+ % Ensure that generate pdf is machine readable/ATS parsable
+ \pdfgentounicode=1
+
+ %-------------------------
+ % Custom commands
+ \newcommand{\resumeItem}[1]{
+   \item\small{
+     {#1 \vspace{-2pt}}
+   }
+ }
+
+ \newcommand{\resumeSubheading}[4]{
+   \vspace{-2pt}\item
+     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+       \textbf{#1} & #2 \\
+       \textit{\small#3} & \textit{\small #4} \\
+     \end{tabular*}\vspace{-7pt}
+ }
+
+ \newcommand{\resumeSubSubheading}[2]{
+     \item
+     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+       \textit{\small#1} & \textit{\small #2} \\
+     \end{tabular*}\vspace{-7pt}
+ }
+
+ \newcommand{\resumeProjectHeading}[2]{
+     \item
+     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+       \small#1 & #2 \\
+     \end{tabular*}\vspace{-7pt}
+ }
+
+ \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+ \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+ \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+ \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+ \newcommand{\resumeItemListStart}{\begin{itemize}}
+ \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+ %-------------------------------------------
+ %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ \begin{document}
+
+ %----------HEADING----------
+
+
+ \begin{center}
+     \textbf{\Huge \scshape Chirag Khandhar} \\ \vspace{1pt}
+     \small XXX-XXX-XXXX $|$ \href{mailto:abc@zyx.com}{\underline{abc@zyx.com}} $|$ 
+     \href{https://www.linkedin.com/in/chirag-khandhar/}{\underline{linkedin.com/in/chirag-khandhar}} $|$
+     \href{https://github.com/chiragkhandhar}{\underline{github.com/chiragkhandhar}}
+ \end{center}
+
+
+ %-----------EDUCATION-----------
+ \section{Education}
+   \resumeSubHeadingListStart
+     \resumeSubheading
+       {Illinois Institute of Technology }{Chicago, IL}
+       {Master of Computer Science |\textbf{ GPA: 3.66}}{May 2021}
+           \resumeItemListStart
+             \resumeItem{Top Courses: Enterprise Web Applications, Mobile Application Development, Geo-spatial Vision and Visualization, Software Systems Architecture, Software Modelling  }
+         \resumeItemListEnd
+
+   \resumeSubHeadingListEnd
+
+ %-----------EXPERIENCE-----------
+ \section{Experience}
+   \resumeSubHeadingListStart
+
+     \resumeSubheading
+       {Software Engineer}{June 2021 – Present}
+       {Egen Solutions}{Chicago, IL}
+       \resumeItemListStart
+         \resumeItem{Developed a cross-platform mobile app, using \textbf{Ionic}, to make end-to-end SSL secured payments for a car loan, that channelize \textbf{\$1B} in annual revenue.}
+         \resumeItem {Tech-design and develop high value features like\textbf{ Auto-Pay} to automate payments through bank accounts.}
+         \resumeItem{Developed Angular Services to simplify Apollo \textbf{state-management}, \textbf{mutations} and \textbf{querying} operations.}
+            \resumeItem{Built pixel perfect \textbf{ADA compliant} UI components, dashboards and workflows for the app, in a TDD env.}
+          \resumeItem{Write Unit \& Integration tests with Jasmine \& CyPress respectively covering functional requirements to maintain code-quality.}
+ 		\resumeItem{Participate in Regression Testing, UAT/PROD support for fixing priority issues.}
+         \resumeItem{Own feature deployments by build-mastering it }
+         \resumeItem{Open-source contributions to the Ionic Framework  (v6) by identifying and creating issues.}
+         \resumeItem {Technologies: TypeScript, Angular 12, Capacitor 3, Ionic 6, CyPress, Jasmine, Apollo, GraphQL, RxJS, SwiperJS, Lodash, Auth0, Launch Darkly, PaymentUs, Azure Devops.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+       {Graduate Research Assistant}{January 2021 – May 2021}
+       {Department of Energy, Argonne National Laboratory}{Chicago, IL}
+       \resumeItemListStart
+         \resumeItem{Developed a web framework for building a real-time layered map interface that assists power companies to visualize \& monitor power-grid infrastructure.}
+         \resumeItem{Utilized \textbf{LeafletJS} and \textbf{MapboxGL} to render \& control multiple tiled layers and \textbf{GeoJSON} data points.}
+         \resumeItem{Product, UX and UI designed the web framework by translating requirements from the computational scientists.}
+         \resumeItem{Technologies: JavaScript, LeafletJS, GeoJSON, TileMill, AWS EC2, Docker, Figma, Python.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+       {Software Engineer Intern}{September 2020 – December 2020}
+       {Scripted Team, Script Health}{Chicago, IL}
+       \resumeItemListStart
+         \resumeItem{Built a SAAS product, that enables pharmacists to prescribe for common treatments \& conditions.}
+         \resumeItem{Designed and implemented clinical review dashboard to render self-assessed forms of 10+ common conditions.  }
+         \resumeItem{Developed high value experiences like User On-boarding, Clinical Review, 2-FA and Admin Settings Panel.  }
+         \resumeItem{Technologies: JavaScript, \textbf{React, React Hooks}, \textbf{Redux}, MaterialUI, JEST, JIRA, Bitbucket.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+       {Software Engineer Intern}{May 2020 – August 2020}
+       {Knobull Inc}{Chicago, IL}
+       \resumeItemListStart
+         \resumeItem{Built  a web app using \textbf{Mongo-Express-React-Node}  that assists researchers to ask \& answer questions.}
+         \resumeItem{Developed UI components, REST API endpoints and middleware with a continuous deployment over Heroku. }
+         \resumeItem{Enabled Google \textbf{O-Auth} log-in and sign-up experience using \textbf{PassportJS}.    }
+       \resumeItemListEnd
+
+     \resumeSubHeadingListEnd
+
+ %-----------COMMUNITY AND LEADERSHIP-----------
+ \section{Community \& Leadership}
+   \resumeSubHeadingListStart
+      \resumeSubheading
+       {Open Source Contributor }{June 2021 – Present}
+       {Ionic Framework | Egen Solutions }{Chicago , IL}
+
+     \resumeSubheading
+       {Creative Head}{September 2019 – December 2020}
+       {Indian Student Association | Illinois Institute of Technology }{Chicago , IL}
+     \resumeSubHeadingListEnd
+
+
+ %-----------TECHNICAL SKILLS-----------
+ \section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+      \textbf{Languages}{: TypeScript, Java, Python, SASS} \\
+      \textbf{Frameworks}{: Angular, Ionic, React, NodeJS, Jasmine, Jest} \\
+      \textbf{Libraries}{: Apollo, Lodash, Redux, MaterialUI, LeafletJS, MapboxGL, ExpressJS, Charts.JS, PassportJS } \\
+      \textbf{Developer Tools}{: Git, Bitbucket, JIRA, TargetProcess, Zeplin, Fork, JsDoc, VS Code, IntelliJ IDEs, Postman, Mapbox Studio} \\
+
+     }}
+  \end{itemize}
+
+
+ %-------------------------------------------
+ \end{document}
